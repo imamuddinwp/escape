@@ -1,6 +1,6 @@
 /*********************************************
 Project Name  : Escape
-Project URL   : https://imamcu07.github.io/escape/
+Project URL   : 
 Author        : ImAmUdDiN
 Author URL    : https://about.me/imamcu07
 Version       : 1.0.1
@@ -28,6 +28,7 @@ Table Of Content
     font-family: 'Brandon Grotesque Regular';
     src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
          url('../fonts/brandon_reg-webfont.woff') format('woff');
+		 url('../fonts/brandon_black-webfont.woff') format('woff');
   }
 
   * {
@@ -91,6 +92,7 @@ background-color:rgba(255, 255, 255, 0.3);
   font-weight: 700;
   color: #ffffff;  
   padding-bottom: 40px;
+ font-family: 'Brandon Grotesque Black';
 }
 .learn_more {
   padding-top: 40px;
