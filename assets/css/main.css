@@ -1,0 +1,129 @@
+/*********************************************
+Project Name  : Escape
+Project URL   : 
+Author        : ImAmUdDiN
+Author URL    : https://about.me/imamcu07
+Version       : 1.0.1
+**********************************************
+
+Table Of Content 
+-------------------
+00: Basic Initialization
+01: Header 
+      ---Background Image
+      ---Navigation
+      ---Header Text
+      ---Button
+02: About
+03: Clients
+04: Team Member
+05: Contact 
+06: Footer
+============================================================*/
+
+/*------------------------------
+00: Basic Initialization
+--------------------------------*/
+@font-face {
+    font-family: 'Brandon Grotesque Regular';
+    src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg-webfont.woff') format('woff');
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brandon Grotesque Regular';
+  }
+/*-------------------
+Header Area 
+---------------*/
+.header_area {
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../../assets/images/header-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*------Navigation----*/
+.navbar-light {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding-left: 25px;
+}
+.navbar-light .navbar-nav .nav-link:visited {
+  color: #C9D6FF;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+ color: #00F260;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-toggler {
+  border-color: white;
+}
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+background-color:rgba(255, 255, 255, 0.3);
+}
+/*-------Header Info -----*/
+.header_info  {
+  text-align: center;
+  padding-top: 80px;
+}
+.header_info h3 {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #cccccc;
+  padding-bottom: 30px;
+}
+
+.header_info h1 {
+  text-transform: uppercase;
+  font-size: 66px;
+  font-weight: 700;
+  color: #ffffff;  
+  padding-bottom: 40px;
+}
+.learn_more {
+  padding-top: 40px;
+}
+.learn_more input {
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid #fff;
+  height: 64px;
+  width: 240px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation:  pulse-white 5s infinite linear;
+  -webkit-animation:  pulse-white 5s infinite linear;
+}
+
+
+@keyframes pulse-white {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	
+	70% {
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
