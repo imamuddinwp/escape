@@ -14,13 +14,34 @@
 }
 @media only screen and (max-width: 768px) {
     .header_info  {
-        padding-top: 20px;
+        padding-top: 0;
       }
       .header_info h1 {
         font-size: 45px;
       }
       .header_info h3 {
         font-size: 31px;
+      }
+      .about_top {
+        padding-top:5px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+      }
+      
+      .common_area h2 {
+        padding-bottom: 5px;
+        font-size: 30px;
+      }
+      .common_area h2 span{
+        font-weight: 700;
+      }
+      .common_area p {
+        padding-top: 5px;
+      }
+      
+      .about_bottom {
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
 }
