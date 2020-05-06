@@ -202,10 +202,7 @@ background-color:rgba(255, 255, 255, 0.3);
   color: #666666;
   font-size: 22px;
 }
-.profile_photo {
-  height: 220px;
-  width: 220px;
-  background-color: #000;
+.client_profile img{
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -214,45 +211,41 @@ background-color:rgba(255, 255, 255, 0.3);
 }
 .quote_box,
 .quote_box1 {
-  height: 175px;
-  width: 675px;
   position: relative;
   background-color: #fff;
   box-shadow: 10px 10px 20px 2px #ededed;
 }
 .quote_box::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  border-left: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  box-shadow: inset 2px -2px 0px #ededed;
-  background-color: #fff;
-  transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  -moz-transform: translate(-50%, -50%) rotate(45deg);
-  -ms-transform: translate(-50%, -50%) rotate(45deg);
-  -o-transform: translate(-50%, -50%) rotate(45deg);
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top:50%;
+    position: absolute;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #fff;
+    border-bottom: 13px solid transparent;
+    transform: translateY(-50%) ;
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%) ;
+    -ms-transform: translateY(-50%) ;
+    -o-transform: translateY(-50%) ;
 }
 .quote_box1::before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: -28px;
-  height: 30px;
-  width: 30px;
-  border-left: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  box-shadow: 2px -2px 0px #ededed;
-  background-color: #fff;
-  transform: translate(-50%, -50%) rotate(45deg);
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  -moz-transform: translate(-50%, -50%) rotate(45deg);
-  -ms-transform: translate(-50%, -50%) rotate(45deg);
-  -o-transform: translate(-50%, -50%) rotate(45deg);
+  width: 0;
+  height: 0;
+  left: 100%;
+  top:50%;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #fff;
+  border-bottom: 13px solid transparent;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .blockquote-footer {
   font-size: 20px;
@@ -264,6 +257,7 @@ background-color:rgba(255, 255, 255, 0.3);
   padding-bottom: 60px;
   background-color: #fff;
 }
+
 /*-----Team Section---*/
 .team_section {
   color: #ffffff;
@@ -279,41 +273,26 @@ background-color:rgba(255, 255, 255, 0.3);
   font-size: 22px;  
   padding-bottom: 75px;
 }
-.team_details {
-  text-align: center;
+.team_member_info {
+ text-align: center;
 }
-.team_details .team_person{
-  text-align: center;
-  background-color: #000;
-  height: 235px;
-  width: 235px;
+.team_member_info img {
   border-radius: 50%;
-  border: 7px solid #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  overflow: hidden;
+  border: 5px solid #fff;
 }
-.team_details .team_person img{
-  padding-bottom: 16px;
-}
-.team_details h3{
+.team_member_info h3 {
+  padding-top: 25px;
   font-size: 18px;
   font-weight: 700;
 }
-.team_details h6{
+.team_member_info h6 {
   font-size: 16px;
 }
-.team_details ul  {
- display: flex;
- justify-content: center;
-}
-.team_details ul  li {
- list-style: none;
- padding-right: 5px;
-}
-.team_details ul li a {
+.team_member_info .social_links ul li a{
   text-decoration: none;
   color: #fff;
   height: 60px;
@@ -329,12 +308,14 @@ background-color:rgba(255, 255, 255, 0.3);
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .team_text p {
   font-size: 20px;
   color: #ebebeb;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 /*-------Main Footer----*/
 .main_footer {
   padding-top: 90px;
@@ -343,37 +324,33 @@ background-color:rgba(255, 255, 255, 0.3);
 .footer_hello .common_area {
   color: #fff;
 }
-.footer_hello .common_area h2{}
+
 .footer_hello .common_area h6{
   font-size: 18px;
   padding-top: 0;
   padding-bottom: 40px;
 }
 
-.contact_info ul {
-  display: flex;
-  justify-content: space-around;
-}
-.contact_info ul li {
- list-style: none;
-}
 .contact_info ul li a {
   text-decoration: none;
   display: block;
   color: #ffffff;
   font-size: 16px;
-  margin-right: -10px;
+}
+.form-control {
+  height: calc(1.7rem + 1.2rem + 2px);
 }
 textarea.form-control {
-  height: 30vh;
+  height: 25vh;
 }
+
 hr {
   height: 1px;
   color: #9999cc;
 }
 .copy_rights {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .copy_rights p {
@@ -384,3 +361,4 @@ hr {
   font-weight: 700;
   text-decoration: none;
 }
+
